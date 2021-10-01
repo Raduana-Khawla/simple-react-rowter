@@ -8,6 +8,7 @@ import NotFound from './components/About/NotFound/NotFound';
 import Header from './components/Header/Header';
 import FriendDetail from './components/FriendDetail/FriendDetail';
 import Culture from './components/Culture/Culture';
+import PostDetails from './components/PostDetails/PostDetails';
 
 function App() {
   return (
@@ -27,6 +28,10 @@ function App() {
        <Route path="/friend/:friendId">
          <FriendDetail></FriendDetail>
        </Route>
+       <Route path="/post/:postId">
+         <PostDetails>
+         </PostDetails>
+         </Route>
        <Route exact path="/about">
        <About></About>
        </Route>
